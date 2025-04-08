@@ -1,10 +1,12 @@
 #Clean.py
 
-def clean_city_data(raw_json):
+from dataPackage.data import *
+
+def clean_city_data(parsed_json):
     """Extract city name, country, and population from raw JSON data."""
     clean_data = []
 
-    for city in raw_json['data']:
+    for city in parsed_json['data']:
         name = city.get('name')
         country = city.get('country')
         population = city.get('population')
