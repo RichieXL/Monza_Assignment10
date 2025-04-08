@@ -21,12 +21,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="dataPackage\data.py" />
+    <Compile Include="dataPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mainPackage\main.py" />
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="dataPackage\" />
     <Folder Include="mainPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

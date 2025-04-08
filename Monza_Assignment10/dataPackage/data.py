@@ -1,4 +1,3 @@
-# main.py
 import json
 import requests
 
@@ -15,5 +14,4 @@ total = int(parsed_json['metadata']['totalCount']) # The number of cities that w
 
 for city in parsed_json['data']:
     print(city)
-
 
