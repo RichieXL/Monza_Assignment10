@@ -9,11 +9,11 @@ def clean_city_data(parsed_json):
     for city in parsed_json['data']:
         name = city.get('name')
         country = city.get('country')
-        population = city.get('population')
+        latitude = city.get('latitude')
         clean_data.append({
             'name': name,
             'country': country,
-            'population': population
+            'latitude': latitude
         })
 
     return clean_data
